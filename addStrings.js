@@ -1,5 +1,5 @@
-var test1 = '1';
-var test2 = '9';
+var test1 = '25';
+var test2 = '125';
 function addStrings(num1, num2) {
     if (num1.length < num2.length){
         let numHolder = num2;
