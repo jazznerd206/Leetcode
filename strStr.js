@@ -21,10 +21,10 @@ const needle12 = 'issip'
 
 
 const strStr = (haystack, needle) => {
-    if (haystack !== '' && needle === '') {
+    if (haystack !== '' && needle === '' || needle === '' || haystack === '') {
         console.log(0)
         return 0
-    } else if (needle !== '' && haystack === '') {
+    } else if (needle !== '' && haystack === '' || haystack.includes(needle) === false) {
         console.log(-1);
         return -1;
     }
@@ -44,17 +44,17 @@ const strStr = (haystack, needle) => {
     console.log(0)
     return 0;
 }
-// console.log('should return as 2');
-// strStr(haystack, needle);
-// console.log('should return as 0');
-// strStr(haystack1, needle2);
-// console.log('should return as -1');
-// strStr(haystack3, needle4);
-// console.log('should return as -1');
-// strStr(haystack5, needle6);
-// console.log('should return as 0');
-// strStr(haystack7, needle8);
-// console.log('should return as 0');
-// strStr(haystack9, needle10);
+console.log('should return as 2');
+strStr(haystack, needle);
+console.log('should return as 0');
+strStr(haystack1, needle2);
+console.log('should return as -1');
+strStr(haystack3, needle4);
+console.log('should return as -1');
+strStr(haystack5, needle6);
+console.log('should return as 0');
+strStr(haystack7, needle8);
+console.log('should return as 0');
+strStr(haystack9, needle10);
 console.log('should return as 4');
 strStr(haystack11, needle12);
