@@ -13,7 +13,7 @@ const contains = (ransomNote, magazine) => {
         map[magazine[i]] = (map[magazine[i]] || 0) + 1;
       }
       for (let i = 0; i < ransomNote.length; i++) {
-          console.log(false)
+        console.log(false)
         if (!map[ransomNote[i]]--) return false;
       }
       console.log(true)
