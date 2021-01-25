@@ -2,8 +2,6 @@ const fibonacci = n =>
     [...Array(n)].reduce(
         (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i), []
     )
-
-    
 const fibonacci2 = n => {  
     let arr = []; 
     let obj = {};
@@ -22,8 +20,6 @@ const fibonacci2 = n => {
     }
     return arr;
 }
-
-    
 let time1 = Date.now()
 console.log(fibonacci(7));
 let time2 = Date.now()
